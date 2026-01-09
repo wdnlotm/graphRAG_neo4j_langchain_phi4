@@ -61,3 +61,10 @@ retriever is designed to retrieve the resulting graph edges as follows.
 >I16 - down-REGULATES -> Vegfa with a strength of 0.764.<br>
 >Il1B - up-REGULATES -> I16 with a strength of 0.771.<br>
 >Nfkbl - up-REGULATES -> I16 with a strength of 0.925.
+
+The LLM then receives these retrieved graph edges (including their properties), the related texts, and the original
+question to formulate its final answer:
+
+>>IL6 is a transcription factor that down regulates several genes, indicating it suppresses their expression. Specifically, IL6 down regulates the gene Il10 with a strength
+of approximately 0.786, suggesting a moderate level of suppression. It also strongly down regulates Crebbp and Pten, with strengths of about 0.966 and 0.991 respectively, indicating
+significant suppression. Additionally, IL6 down regulates Vegfa with a strength of around 0.765. These interactions suggest that IL6 plays a crucial role in modulating the expression of genes involved in various cellular processes.
