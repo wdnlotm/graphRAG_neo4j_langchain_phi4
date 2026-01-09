@@ -56,8 +56,13 @@ When the question ‘What does IL6 do? Give me the answer in five sentences.’ 
 retriever is designed to retrieve the resulting graph edges as follows.
 
 >I16 - down-REGULATES -> I110 with a strength of 0.786.
+>
 >I16 - down-REGULATES -> Crebbp with a strength of 0.965.
+>
 >I16 - down-REGULATES -> Pten with a strength of 0.990.
+>
 >I16 - down-REGULATES -> Vegfa with a strength of 0.764.
+>
 >Il1B - up-REGULATES -> I16 with a strength of 0.771.
+>
 >Nfkbl - up-REGULATES -> I16 with a strength of 0.925.
