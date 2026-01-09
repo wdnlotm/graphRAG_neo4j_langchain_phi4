@@ -21,4 +21,25 @@ areas where Large Language Models typically demonstrate weakness. The workflow s
 example of the graph input and output, is displayed in Fig. 1.
 
 ![Fig. 1](figures/graph_building.png)
+![Fig. 1](figures/graph_example.png)
 Fig. 1. A schematic illustrating the workflow for building and storing the knowledge graph in a database.
+
+## GraphRAG LLM agent
+The GraphRAG agent comprises three main components: 
+1. the entity chain,
+2. the graph retriever, and
+3. the text retriever (See. Fig. 2).
+
+The entity chain is an LLM query engineered via
+prompt-output. For the example shown in Figure 1, its task is to identify and return any genes and transcrip-
+tion factors mentioned in the input question as a Python list. Crucially, the LLM does not use a pre-existing
+list of genes or transcription factors; instead, it identifies any terms that are potentially gene or transcription
+factor names based on context and linguistic patterns. The graph retriever then utilizes this list to find all
+edges where a listed item serves as either the source or destination node. This retrieval process is accom-
+plished through a series of database query language executions, which can be customized for input-output
+processing via natural language processing and structured output formatting. Finally, the text retriever is re-
+sponsible for searching and retrieving the text nodes (the textual data stored in the database). To find texts
+relevant to the given question, the retriever employs both exact keyword matching and similarity search tech-
+niques. Then, the question, the output of graph retriever, and the output of text retriever would be provided to
+the LLM as the context and the question. The LLM will compose its answer from these input. A demo code is in
+/project/iprime_storage/graphRAG_by_phi4_neo4j.
