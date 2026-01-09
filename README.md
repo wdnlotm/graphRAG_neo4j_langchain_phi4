@@ -27,10 +27,10 @@ building and storing the knowledge graph in a database. Lower Left: An example o
 creation. Lower Right: The resulting knowledge graph, with one of the edge properties displayed.
 
 ## GraphRAG LLM agent
-The GraphRAG agent comprises three main components: 
+The GraphRAG agent comprises three main components (See. Fig. 2): 
 1. the entity chain,
 2. the graph retriever, and
-3. the text retriever (See. Fig. 2).
+3. the text retriever.
 
 The entity chain is an LLM query engineered via
 prompt-output. For the example shown in Figure 1, its task is to identify and return any genes and transcrip-
