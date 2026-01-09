@@ -50,3 +50,8 @@ the LLM as the context and the question. The LLM will compose its answer from th
 **Fig. 2. Schematic diagram of graphRAG agent components and workflow.** The retrieved informa-
 tion—including the graph edges/nodes (from the graph retriever), the textual data (from the text retriever), and
 the original Question—is then passed to the LLM. This LLM synthesizes all the data to produce the final Answer.
+
+## Example of graphRAG internal workflow and output. 
+When the question ‘What does IL6 do? Give me the answer in five sentences.’ is entered, the entity chain would return [‘Il6’]. Using this list as input, the graph
+retriever is designed to retrieve the resulting graph edges as follows.
+
