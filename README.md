@@ -45,3 +45,8 @@ relevant to the given question, the retriever employs both exact keyword matchin
 niques. Then, the question, the output of graph retriever, and the output of text retriever would be provided to
 the LLM as the context and the question. The LLM will compose its answer from these input. A demo code is in
 /project/iprime_storage/graphRAG_by_phi4_neo4j.
+
+![Fig. 2](figures/graphRAG_schematics.png)
+**Fig. 2. Schematic diagram of graphRAG agent components and workflow.** The retrieved informa-
+tion—including the graph edges/nodes (from the graph retriever), the textual data (from the text retriever), and
+the original Question—is then passed to the LLM. This LLM synthesizes all the data to produce the final Answer.
