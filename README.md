@@ -19,4 +19,4 @@ can be added to the database post hoc. This capability for post hoc database ref
 to the graphRAG framework, as it allows for the precise entry of numeric values and handling of repeated terms,
 areas where Large Language Models typically demonstrate weakness. The workflow schematic, along with an
 example of the graph input and output, is displayed in Fig. 1.
-![Fig. 1](figure/graph_building.png)
+![Fig. 1](figures/graph_building.png)
