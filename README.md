@@ -55,9 +55,9 @@ the original Question—is then passed to the LLM. This LLM synthesizes all the 
 When the question ‘What does IL6 do? Give me the answer in five sentences.’ is entered, the entity chain would return [‘Il6’]. Using this list as input, the graph
 retriever is designed to retrieve the resulting graph edges as follows.
 
->>I16 - down-REGULATES -> I110 with a strength of 0.786.
->>I16 - down-REGULATES -> Crebbp with a strength of 0.965.
->>I16 - down-REGULATES -> Pten with a strength of 0.990.
->>I16 - down-REGULATES -> Vegfa with a strength of 0.764.
->>Il1B - up-REGULATES -> I16 with a strength of 0.771.
->>Nfkbl - up-REGULATES -> I16 with a strength of 0.925.
+>I16 - down-REGULATES -> I110 with a strength of 0.786.<br>
+>I16 - down-REGULATES -> Crebbp with a strength of 0.965.<br>
+>I16 - down-REGULATES -> Pten with a strength of 0.990.<br>
+>I16 - down-REGULATES -> Vegfa with a strength of 0.764.<br>
+>Il1B - up-REGULATES -> I16 with a strength of 0.771.<br>
+>Nfkbl - up-REGULATES -> I16 with a strength of 0.925.
