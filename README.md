@@ -22,7 +22,9 @@ example of the graph input and output, is displayed in Fig. 1.
 
 ![Fig. 1](figures/graph_building.png)
 ![Fig. 1](figures/graph_example.png)
-Fig. 1. A schematic illustrating the workflow for building and storing the knowledge graph in a database.
+Fig. 1. Schematic diagram of knowledge graph building. Top: A schematic illustrating the workflow for
+building and storing the knowledge graph in a database. Lower Left: An example of the text input used for graph
+creation. Lower Right: The resulting knowledge graph, with one of the edge properties displayed.
 
 ## GraphRAG LLM agent
 The GraphRAG agent comprises three main components: 
